@@ -22,7 +22,7 @@ jobs:
           docker build -t ttala/devops-labx:${{ env.SHORT_SHA }} .
       - name: Login to Dockerhub
         run: |
-          echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login -u "${{ secrets.DOCKER.DOCKERHUB_NAME }}" --password-stdin
+          echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login -u "${{ secrets.DOCKERHUB_NAME }}" --password-stdin
       - name: Push to Dockerhub
         run: |
           docker push ttala/devops-labx:${{ env.SHORT_SHA }}
