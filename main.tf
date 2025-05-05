@@ -1,6 +1,6 @@
 resource "scaleway_instance_ip" "srv_ip" {}
 
-resource "scaleway_instance_server" "controlplane" {
+resource "scaleway_instance_server" "k8s-node" {
   name   = var.instance_name
   type   = var.instance-type
   ip_id  = scaleway_instance_ip.srv_ip.id

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Set master node name
-master_node="controlplane"
+master_node="k8s-node"
 
 set -e
 
