@@ -1,6 +1,6 @@
 ---
 
-name: devops pipeline lab
+name: devops pipeline python app
 
 on:
   push:
