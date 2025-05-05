@@ -25,4 +25,4 @@ jobs:
           echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login -u "${{ secrets.DOCKERHUB_NAME }}" --password-stdin
       - name: Push to Dockerhub
         run: |
-          docker push ttala/devops-labx:${{ env.SHORT_SHA }}
+          docker push ttyeri/devops-labx:${{ env.SHORT_SHA }}
